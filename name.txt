@@ -1,0 +1,97 @@
+0): epel/x86_64/primary_db                                                                                                                                                                                | 7.0 MB  00:00:00     
+252 packages excluded due to repository priority protections
+Package docker-20.10.25-1.amzn2.0.4.x86_64 already installed and latest version
+Nothing to do
+  0 *ansible2=latest          enabled      \
+        [ =2.4.2  =2.4.6  =2.8  =stable ]
+  2  httpd_modules            available    [ =1.0  =stable ]
+  3  memcached1.5             available    \
+        [ =1.5.1  =1.5.16  =1.5.17 ]
+  9  R3.4                     available    [ =3.4.3  =stable ]
+ 10  rust1                    available    \
+        [ =1.22.1  =1.26.0  =1.26.1  =1.27.2  =1.31.0  =1.38.0
+          =stable ]
+ 18  libreoffice              available    \
+        [ =5.0.6.2_15  =5.3.6.1  =stable ]
+ 19  gimp                     available    [ =2.8.22 ]
+ 20 †docker=latest            enabled      \
+        [ =17.12.1  =18.03.1  =18.06.1  =18.09.9  =stable ]
+ 21  mate-desktop1.x          available    \
+        [ =1.19.0  =1.20.0  =stable ]
+ 22  GraphicsMagick1.3        available    \
+        [ =1.3.29  =1.3.32  =1.3.34  =stable ]
+ 24  epel=latest              enabled      [ =7.11  =stable ]
+ 25  testing                  available    [ =1.0  =stable ]
+ 26  ecs                      available    [ =stable ]
+ 27 †corretto8                available    \
+        [ =1.8.0_192  =1.8.0_202  =1.8.0_212  =1.8.0_222  =1.8.0_232
+          =1.8.0_242  =stable ]
+ 32  lustre2.10               available    \
+        [ =2.10.5  =2.10.8  =stable ]
+ 33 †java-openjdk11           available    [ =11  =stable ]
+ 34  lynis                    available    [ =stable ]
+ 36  BCC                      available    [ =0.x  =stable ]
+ 37  mono                     available    [ =5.x  =stable ]
+ 38  nginx1                   available    [ =stable ]
+ 40  mock                     available    [ =stable ]
+ 43  livepatch                available    [ =stable ]
+ 44 †python3.8=latest         enabled      [ =stable ]
+ 45  haproxy2                 available    [ =stable ]
+ 46  collectd                 available    [ =stable ]
+ 47  aws-nitro-enclaves-cli   available    [ =stable ]
+ 48  R4                       available    [ =stable ]
+  _  kernel-5.4               available    [ =stable ]
+ 50  selinux-ng               available    [ =stable ]
+ 52  tomcat9                  available    [ =stable ]
+ 53  unbound1.13              available    [ =stable ]
+ 54 †mariadb10.5=latest       enabled      [ =stable ]
+ 55  kernel-5.10=latest       enabled      [ =stable ]
+ 56  redis6                   available    [ =stable ]
+jean:~/environment $ git clone https://github.com/chancelierF/terraform-Metro.git
+Cloning into 'terraform-Metro'...
+remote: Enumerating objects: 3, done.
+remote: Counting objects: 100% (3/3), done.
+remote: Total 3 (delta 0), reused 0 (delta 0), pack-reused 0
+Receiving objects: 100% (3/3), done.
+jean:~/environment $ ls
+README.md  terraform-Metro
+jean:~/environment $ cd terraform-Metro/
+jean:~/environment/terraform-Metro (main) $ ls
+README.md
+jean:~/environment/terraform-Metro (main) $ git checkout -b jeans
+Switched to a new branch 'jeans'
+jean:~/environment/terraform-Metro (jeans) $ touch jeans.txt
+jean:~/environment/terraform-Metro (jeans) $ git add .
+jean:~/environment/terraform-Metro (jeans) $ git commit -m "up"
+[jeans 98bd81e] up
+ Committer: EC2 Default User <ec2-user@ip-172-31-35-63.us-east-2.compute.internal>
+Your name and email address were configured automatically based
+on your username and hostname. Please check that they are accurate.
+You can suppress this message by setting them explicitly:
+
+    git config --global user.name "Your Name"
+    git config --global user.email you@example.com
+
+After doing this, you may fix the identity used for this commit with:
+
+    git commit --amend --reset-author
+
+ 1 file changed, 15 insertions(+)
+ create mode 100644 jeans.txt
+jean:~/environment/terraform-Metro (jeans) $ git checkout main 
+Switched to branch 'main'
+Your branch is up to date with 'origin/main'.
+jean:~/environment/terraform-Metro (main) $ git pull
+From https://github.com/chancelierF/terraform-Metro
+ * [new branch]      jeansbranch -> origin/jeansbranch
+Already up to date.
+jean:~/environment/terraform-Metro (main) $ git branch
+  jeans
+* main
+jean:~/environment/terraform-Metro (main) $ git checkout jeansbranch 
+branch 'jeansbranch' set up to track 'origin/jeansbranch'.
+Switched to a new branch 'jeansbranch'
+jean:~/environment/terraform-Metro (jeansbranch) $ ls
+README.md
+jean:~/environment/terraform-Metro (jeansbranch) $ touch jeansfile.txt
+jean:~/environment/terraform-Metro (jeansbranch) $ 
